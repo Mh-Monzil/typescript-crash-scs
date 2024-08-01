@@ -195,3 +195,19 @@
 
 // let sweet1 = new Sweet();
 // sweet1.eat
+
+
+
+// constructor 
+class Earphones {
+    company : string;
+    price : number;
+
+    constructor(name: string, price: number) {
+        this.company = name;
+        this.price = price;
+    }
+}
+
+let e1 = new Earphones("Samsung", 2500);
+let e2 = new Earphones("Apple", 3600);

@@ -144,3 +144,12 @@
 // }
 // let sweet1 = new Sweet();
 // sweet1.eat
+// constructor 
+class Earphones {
+    constructor(name, price) {
+        this.company = name;
+        this.price = price;
+    }
+}
+let e1 = new Earphones("Samsung", 2500);
+let e2 = new Earphones("Apple", 3600);
