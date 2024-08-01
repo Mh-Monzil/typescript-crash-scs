@@ -198,7 +198,7 @@
 
 
 
-// constructor 
+// constructor ---------------------------------
 
 // class Earphones {
 //     // company : string;
@@ -220,17 +220,34 @@
 
 
 
-// access modifiers 
+// access modifiers----------------------------------------
+
 // 1. public can use inside of the class and also can use outside of the class through instance
 // 2. Private can only use inside of the class
 // 3. Protected can use inside of the class and also can use the extended class but cannot use outside of the class like private with instance
 
 
-class PenDrive {
-    private price = 12; 
-    constructor(){
-        this.price = 1200;
-        console.log(this.price);
-    }
-}
-let p1 = new PenDrive(); // instance
+// class PenDrive {
+//     private price = 12; 
+//     constructor(){
+//         this.price = 1200;
+//         console.log(this.price);
+//     }
+// }
+// let p1 = new PenDrive(); // instance
+
+
+
+// read only properties ------------------------------
+
+// class Shop{
+
+//     constructor(public readonly discount: number) {
+//         this.discount = discount;
+//     }
+
+//     getDiscount(){
+//         console.log(this.discount);
+//     }
+    
+// }
