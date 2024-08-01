@@ -70,7 +70,7 @@
 //     user.name.toUpperCase();
 // }
 
-// example - 2
+// example - 2--------------------------------
 // interface Human{
 //     name: string,
 // }
@@ -84,7 +84,7 @@
 // }
 
 
-// example - 3 (extends)
+// example - 3 (extends)-----------------
 // interface Food{
 //     name: string,
 //     price: number,
@@ -103,7 +103,7 @@
 
 // class  ----------------------------------------
 
-// example1 
+// example1
 
 // class Phone{
 //     price = 2500;
@@ -119,7 +119,7 @@
 //     }
 // }
 
-// example 2
+// example 2 -----------------------
 
 // class AirConditioner {
 //     color = "white";
@@ -155,24 +155,43 @@
 // ac2.turnOf("ac2") 
 
 
-// example3
-type Data = string | null;
+// example3-------------------------
+// type Data = string | null;
 
-class PenDrive{
-    company = "hp";
-    price = 1200;
-    data: string | null = null;
+// class PenDrive{
+//     company = "hp";
+//     price = 1200;
+//     data: string | null = null;
 
-    putData(newData: Data){
-        console.log(`putting data ${newData}`);
-        this.data = newData;
-    }
+//     putData(newData: Data){
+//         console.log(`putting data ${newData}`);
+//         this.data = newData;
+//     }
     
-    getData(){
-        console.log(this.data);
-    }
-}
+//     getData(){
+//         console.log(this.data);
+//     }
+// }
 
-let penDrive1 = new PenDrive();
-penDrive1.putData("20")
-penDrive1.getData()
+// let penDrive1 = new PenDrive();
+// penDrive1.putData("20")
+// penDrive1.getData()
+
+
+
+// example4---------------
+
+// class Food{
+//     price = 1200;
+    
+//     eat(){
+//         console.log("eating");
+//     }
+// }
+
+// class Sweet extends Food {
+//     name = "Sweet";
+// }
+
+// let sweet1 = new Sweet();
+// sweet1.eat
