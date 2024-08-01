@@ -199,15 +199,38 @@
 
 
 // constructor 
-class Earphones {
-    company : string;
-    price : number;
 
-    constructor(name: string, price: number) {
-        this.company = name;
-        this.price = price;
+// class Earphones {
+//     // company : string;
+//     // price : number;
+
+//     // constructor(name: string, price: number) {
+//     //     this.company = name;
+//     //     this.price = price;
+//     // }
+
+//     constructor(public name: string, public price: number) {
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+
+// let e1 = new Earphones("Samsung", 2500);
+// let e2 = new Earphones("Apple", 3600);
+
+
+
+// access modifiers 
+// 1. public can use inside of the class and also can use outside of the class through instance
+// 2. Private can only use inside of the class
+// 3. Protected can use inside of the class and also can use the extended class but cannot use outside of the class like private with instance
+
+
+class PenDrive {
+    private price = 12; 
+    constructor(){
+        this.price = 1200;
+        console.log(this.price);
     }
 }
-
-let e1 = new Earphones("Samsung", 2500);
-let e2 = new Earphones("Apple", 3600);
+let p1 = new PenDrive(); // instance
