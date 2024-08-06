@@ -180,3 +180,21 @@
 //         console.log(this.discount);
 //     }
 // }
+// Getters and Setters ----------------------
+class Abcd {
+    constructor(name) {
+        this.name = name;
+        this.name = name;
+    }
+    get Name() {
+        return this.name;
+    }
+    set Names(value) {
+        this.name = value;
+    }
+}
+// if we use getter and setter this will act like an object. And we can access value from it like and object;
+let abcd1 = new Abcd("monzil");
+console.log(abcd1.Name);
+abcd1.Names = "mh";
+console.log(abcd1.Name);
