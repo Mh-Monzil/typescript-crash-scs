@@ -256,22 +256,63 @@
 
 // Getters and Setters ----------------------
 
-class Abcd{
-    constructor(public name: string) {
-        this.name = name;
-    }
+// class Abcd{
+//     constructor(public name: string) {
+//         this.name = name;
+//     }
 
-    get Name(){
-        return this.name;
-    }
+//     get Name(){
+//         return this.name;
+//     }
 
-    set Names(value: string){
-        this.name = value;
-    }
+//     set Names(value: string){
+//         this.name = value;
+//     }
+// }
+// // if we use getter and setter this will act like an object. And we can access value from it like and object;
+
+// let abcd1 = new Abcd("monzil");
+// console.log(abcd1.Name);
+// abcd1.Names = "mh";
+// console.log(abcd1.Name);
+
+
+// function --------------------------------------
+
+// named function  ----------
+function func1(name: string): void {
+
 }
-// if we use getter and setter this will act like an object. And we can access value from it like and object;
 
-let abcd1 = new Abcd("monzil");
-console.log(abcd1.Name);
-abcd1.Names = "mh";
-console.log(abcd1.Name);
+// arrow function ---------------
+const func2 = (a: string, b: number): void => {
+    const c = a + b;
+}
+
+// implicit return type ----------
+const func3 = () => {
+    return "hey"
+}
+
+// explicit return type ----------
+const func4 = (): string => {
+    return "hey"
+}
+
+//optional parameters ----------
+const func5 = (name: string, age: number, gender?: string) => {
+
+}
+func5("monzil", 21)
+
+// default parameters --------------------------------
+const func6 = (name: string = "ozil") => {
+
+}
+func6();
+
+// rest parameters --------------------------------
+const func7 = (...names: string[]) => {
+
+}
+func7("monzil", "ozil", "hasan");
